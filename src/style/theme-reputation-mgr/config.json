@@ -1,0 +1,19 @@
+{
+  "global": {
+    "$--color-primary": "#2478FF",
+    "$--color-text-primary": "#FFFFFF",
+    "$--color-text-regular": "#6E7999",
+    "$--color-text-secondary": "#2478FF",
+    "$--color-black": "#030B26",
+    "$--background-color-base": "#FFFFFF",
+    "$--color-info": "#A400FF",
+    "$--color-danger": "#FF3D00"
+  },
+  "local": {
+    "$--table-font-color": "#FFFFFF",
+    "$--table-header-font-color": "#6E7999",
+    "$--pagination-font-size": "16px",
+    "$--pagination-button-color": "#6E7999",
+    "$--pagination-hover-color": "#2478FF"
+  }
+}

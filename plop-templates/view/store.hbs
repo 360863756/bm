@@ -1,0 +1,36 @@
+import * as MutationTypes from '@/store/mutation-types';
+import {
+  demoApi, // 移除此示例api
+} from '@/api/risk-evaluation-front';
+
+const state = {
+  demoState: '', // 移除此示例state
+};
+
+const getters = {
+  // 移除此示例getter
+  demoGetter: state => state.demoState,
+};
+
+const mutations = {
+  // 移除此示例mutation
+  [MutationTypes.DEMO_MUTATION](state, demoState) {
+    state.demoState = demoState;
+  },
+};
+
+const actions = {
+  // 移除此示例action
+  async demoAction({ commit }) {
+    const { data } = await demoApi();
+    commit('DEMO_MUTATION', data);
+  }
+};
+
+export default {
+  namespaced: true,
+  state,
+  getters,
+  mutations,
+  actions,
+};

@@ -1,0 +1,283 @@
+@import "./var.scss";
+// 滚动条的宽度
+.el-table__body-wrapper::-webkit-scrollbar {
+  width: 6px; // 横向滚动条
+  height: 6px; // 纵向滚动条 必写
+}
+// 滚动条的滑块
+.el-table__body-wrapper::-webkit-scrollbar-thumb {
+  background-color: $--color-text-regular;
+  border-radius: 3px;
+}
+.el-date-editor {
+    .el-range-separator {
+        width: initial;
+    }
+    .el-range-separator,
+    .el-range__icon,
+    .el-input__icon {
+        line-height: 22px;
+    }
+}
+.el-scrollbar__wrap {
+    box-sizing: content-box;
+}
+.el-table .el-button--text {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.el-button + .el-button {
+    margin-left: 10px;
+}
+//表格样式
+.el-table{
+    background-color: transparent;
+    thead{
+      .cell{
+        font-size: 1vw;
+      }
+    }
+    tbody{
+      .cell{
+        font-size: 16px;
+      }
+    }
+    td{
+      border-bottom:1px solid $--table-border-bottom-color;
+    }
+    tr{
+      background-color: transparent;
+      font-size:12px;
+      font-weight:400;
+    }
+    th{
+      background:$--table-color-head;
+      font-weight:400;
+      font-size:13px;
+      color:$--table-header-font-color;
+      &.is-leaf{
+        border-bottom:1px solid $--table-border-bottom-color;
+      }
+    }
+    &--striped .el-table__body tr.el-table__row--striped td{
+      background-color: transparent;
+    }
+    &--enable-row-hover .el-table__body tr:hover>td, .el-table-filter{
+      background-color: $--table-color;
+    }
+    &::before{
+      background-color: $--table-color;
+    }
+}
+.c-query.c-query-table__query{
+  padding-left: 0px;
+  //导出按钮样式
+  .el-button--primary{
+    padding: 10px 33px;
+    background:$--color-primary;
+    border-radius:4px;
+  span{
+    font-size:16px;
+    font-weight:400;
+    color:$--color-text-primary;
+  }
+}
+}
+.c-common-table__pagination-wrapper{
+    background-color: transparent !important;
+    input{
+      background-color: transparent;
+      border: none;
+    }
+    button{
+      background-color: transparent;
+    }
+}
+// 分页样式
+.el-pagination {
+  button:disabled{
+    background-color: transparent;
+  }
+  .btn-next{
+    background-color: transparent;
+  }
+  .btn-prev{
+    background-color: transparent;
+  }
+  .el-pagination__total::after{
+    content: "记录";
+  }
+  .el-select .el-input__inner{
+    background-color: $--color-black;
+    border: none;
+  }
+}
+.el-checkbox__input .el-checkbox__inner{
+  background:$--table-color;
+  border: none;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: $--table-color;
+    border-color: $--table-color;
+}
+.el-pager li{
+    width:28px;
+    height:28px;
+    background-color: $--table-color;
+    margin-right: 11px;
+    min-width: 0px;
+    font-size:16px;
+}
+//表单
+.el-form{
+  .el-input__inner{
+    width: 300px;
+    background:$--table-color-head;
+    border: none;
+  }
+  .el-input--suffix.el-input {
+    width: 100% !important;
+    .el-input__inner{
+      width: 100% !important;
+      background:$--table-color-head;
+      border: none;
+      &::placeholder {
+        font-size:16px;
+        font-weight:400;
+        color:$--color-text-regular;
+      }
+    }
+  }
+}
+//loading状态配置
+.el-loading-mask{
+  background-color: $--color-black;
+}
+//全局下拉框的样式
+.el-select-dropdown{
+  margin-top: 3px !important;
+  border: none;
+  background: $--select-background;
+  position: relative;
+  &::after{
+      content: "";
+      width:100%;
+      height:100%;
+      position: absolute;
+      left:0;
+      top:0;
+      background: inherit;
+      filter: blur(25px);
+      z-index: 100000;
+  }
+  .el-scrollbar{
+    z-index: 100001;
+    background-color: transparent;
+  }
+  .popper__arrow{
+    border-bottom: none;
+    &::after{
+      content: none;
+    }
+  }
+  &__item{
+    border-bottom:1px solid $--select-item-bordercolor;
+    font-size: 16px;
+    font-weight:400;
+    color: $--color-text-regular;
+    &:last-child{
+      border-bottom: none;
+    }
+    &.hover{
+      background-color: $--select-item-hover;
+      color: $--color-text-primary;
+    }
+    &.selected{
+      color: $--color-text-primary;
+    }
+  }
+  &__list{
+    padding-top: 12px;
+  }
+}
+//弹框颜色
+.el-message-box{
+  background: $--message-background;
+  border: none;
+  &__close::before{
+    color: $--color-text-regular;
+  }
+  &__btns{
+    button:nth-child(1){
+      background: transparent;
+      border-color: $--color-text-regular;
+    }
+  }
+}
+// 时间线
+.el-timeline-item__tail{
+  left: 11px;
+  top: 22px;
+  height: calc(100% - 22px);
+  border-left: 1px solid rgba(191,191,191,1);
+}
+
+.c-titlePanel{
+  &-header{
+    &__append{
+      display: flex;
+    }
+  }
+}
+
+.c-query-list.is-stripe{
+  .c-query-list__item:nth-of-type(2n+1){
+    background-color: transparent;
+  }
+}
+
+
+
+.el-picker-panel{
+  border: transparent;
+  background: rgba(24,33,61,0.95);
+}
+.el-autocomplete-suggestion{
+  border: transparent;
+  background: rgba(24,33,61,0.95);
+  li{
+    &:hover{
+      background-color: transparent;
+    }
+  }
+  .popper__arrow{
+    border: transparent;
+    &::after{
+      border: transparent;
+    }
+  }
+}
+
+.el-tabs--border-card{
+  box-shadow: none;
+}
+
+.search-input{
+  .el-input{
+    width:300px;
+    height:40px;
+    input{
+      border: transparent;
+      background-color:rgba(110,121,153,0.15);
+    }
+    opacity: 0.8;
+  }
+}
+.el-avatar{
+  width: 100%;
+  height: 100%;
+  &--square{
+    border-radius: 0;
+    border: 1px dashed;
+  }
+}

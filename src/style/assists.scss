@@ -1,0 +1,126 @@
+@import "./var.scss";
+
+.page--full {
+  height: 100%;
+  overflow-y: auto;
+}
+.h-full {
+  height: 100%;
+}
+.h-scroll {
+  overflow-y: auto;
+}
+.full-width {
+  width: 100%;
+}
+.horizontal-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.row {
+  display: flex;
+}
+.d-horizontal {
+  display: flex;
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.el-radio-group.is-split {
+  margin-bottom: -5px;
+  .el-radio-button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    & + .el-radio-button {
+      margin-left: 0;
+    }
+    &__inner {
+      border: $--border-base;;
+      border-radius: $--border-radius-base;
+      box-shadow: 0 0 $--color-primary;
+    }
+  }
+}
+
+.el-checkbox-group.is-split {
+  margin-bottom: -5px;
+  .el-checkbox-button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    & + .el-checkbox-button {
+      margin-left: 0;
+    }
+    &__inner {
+      border: $--border-base;;
+      border-radius: $--border-radius-base;
+      box-shadow: 0 0 $--color-primary;
+    }
+    &.is-disabled.is-checked .el-checkbox-button__inner {
+      background-color: $--disabled-fill-base;
+    }
+  }
+}
+
+.el-checkbox-button.is-split {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  .el-checkbox-button__inner {
+    border: $--border-base;;
+    border-radius: $--border-radius-base;
+    box-shadow: 0 0 $--color-primary;
+  }
+  &.is-disabled.is-checked .el-checkbox-button__inner {
+    background-color: $--disabled-fill-base;
+  }
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+
+.btn-wider {
+  width: 190px;
+}
+.text-center {
+  text-align: center !important;
+}
+.form--max-width {
+  width: 50%;
+  min-width: 580px;
+}
+.table-column__status {
+  &::before {
+    content: "";
+    margin-right: 8px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  &.is-success::before {
+    background-color: $--color-success;
+  }
+  &.is-danger::before {
+    background-color: $--color-danger;
+  }
+  &.is-warning::before {
+    background-color: $--color-warning;
+  }
+}

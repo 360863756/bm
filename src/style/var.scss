@@ -1,0 +1,122 @@
+@import "./theme-reputation-mgr/var.scss";
+// Layout
+$--app-header-height: 56px;
+$--app-header-background-color: #030B26;
+$--app-header-font-size-title: 24px;
+$--app-header-font-size-ratio-subtitle: 0.5;
+
+$--app-layout-background-color: #030B26;
+$--app-main-background-color: #EEF3F6;
+$--app-main-border-radius: $--border-radius-base;
+$--app-footer-height: 54px;
+$--app-footer-background-color: #282828;
+$--app-footer-color: #999999;
+
+$--app-aside-width: 76px;
+
+$--app-menu-item-width: 110px; // 4个子宽度
+$--app-menu-item-height: $--app-header-height;
+$--app-menu-item-font-size: 14px;
+$--app-menu-item-color: $--color-white;
+$--app-menu-item-background-color: $--color-primary;
+$--app-menu-item-active-background-color: $--color-white;
+$--app-menu-item-active-color: $--color-text-primary;
+$--app-menu-item-active-bar-with: 3px;
+
+$--app-sub-layout-header-height: 70px;
+$--app-sub-layout-width: 260px;
+$--app-sub-layout-menu-font-size: 14px;
+$--app-sub-layout-menu-active-font-size: $--app-sub-layout-menu-font-size;
+$--app-sub-layout-menu-link-color: $--color-text-primary;
+
+$--app-sub-layout-submenu-link-font-size: 18px;
+$--app-sub-layout-submenu-link-color: #09294D;
+$--app-sub-layout-submenu-link-background-color: #DADCE1;
+$--app-sub-layout-submenu-link-active-background-color: $--color-primary;
+
+// Mgr Layout
+$--mgr-color-primary: #FD7B15;
+$--mgr-app-header-height: 80px;
+$--mgr-app-header-font-size-title: 20px;
+$--mgr-app-aside-background-color: $--color-black;
+$--mgr-app-body-background-color: #0E152E;
+$--mgr-app-menu-width: 250px;
+
+// Background
+// 背景主题遮罩层透明度
+$--app-background-mask-theme-alpha: 0.8;
+
+// Login
+$--login-box-font-size: $--font-size-large;
+$--login-box-background-color: $--color-white;
+$--login-box-border-radius: $--border-radius-base;
+$--login-box-input-height: 50px;
+
+$--file-manage-health-file-table-zlxg-color:rgba(121,64,213,1);
+// 暴露给js模块的变量
+:export {
+  mgrAppAsideBackgroundColor: $--mgr-app-aside-background-color;
+  colorWhite: $--color-white;
+  colorPrimary: $--color-primary;
+  colorDanger: $--color-danger;
+  colorWarning: $--color-warning;
+  colorInfo: $--color-info;
+  colotTextPrimary: $--color-text-primary;
+  appBackgroundThemeMaskAlpha: $--app-background-mask-theme-alpha;
+  appMenuItemWidth: $--app-menu-item-width;
+  colorGradeHigh:$--color-grade-high;
+  colorGradeCenter:$--color-grade-center;
+  colorGradeLow:$--color-grade-low;
+  colorTextViolet:$--file-manage-health-file-table-zlxg-color;
+}
+//表格
+
+$--table-color: rgba(255, 255, 255, 0.05);
+$--table-color-head: rgba(255,255,255,0.03);//头部背景颜色
+$--table-border-bottom-color: rgba(191,204,255,0.1);//表格底纹颜色
+$--table-header-font-color: rgba(110,121,153,1);//表格头部字体颜色
+
+// 列表颜色
+$--list-color-primary:rgba(22,128,255,1);
+$--list-color-regular:rgba(0,162,255,0.42);
+
+
+
+$--color-light-grey: rgba(110,121,153,0.1);
+$--color-red: rgba(253,51,0,1);
+
+//录入信息
+
+$--enterInformation-form-color: rgba(255,255,255,0.1);
+$--enterInformation-background: #001053;
+$--enterInformation-prefix: rgba(163,170,255,0.1);
+$--enterInformation-suffix: rgba(163,170,255,0.2);
+$--enterInformation-inner: rgba(255,255,255,0.40);
+
+//下拉框颜色
+
+$--select-background:rgba(24,33,61,0.95);
+$--select-item-hover:#18213D;
+$--select-item-bordercolor:rgba(64,73,104,0.3);
+
+//弹框背景
+
+$--message-background:rgba(24,33,61,0.9);
+
+// 答题选中颜色
+$--answer-select-color:rgba(142,115,250,1);
+
+// 答题统计颜色
+$--answer-count-color:rgba(163, 170, 255, 1);
+//主页颜色
+$--platHome-dengriousRange:rgba(19,27,55,1);
+$--platHome-dengriousNum: rgba(65,146,243,1);
+$--platHome-swiperheaderColor: rgba(22, 128, 255, 1);
+$--platHome-swiperheaderLeftColor:rgba(164, 0, 255, 1);
+$--platHome-swiperheaderRightColor:rgba(255, 61, 0, 1);
+$--platHome-swiperImage:#131B37;
+$--platHome-swiperImageNext:#1680FF;
+$--largeHome-span1: rgba(9,51,102,1);
+$--largeHome-span2: rgba(14,76,153,1);
+$--largeHome-span3: rgba(18,102,204,1);
+$--largeHome-span4: rgba(22,128,255,1);
